@@ -1,0 +1,161 @@
+/* Regler for alle billeder generelt */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.index {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+.index > main {
+  grid-column: 2/3;
+}
+/* Placering af footer og header rigtigt på alle sider */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+}
+
+/* Burgermenu / header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw;
+}
+
+.ikon img {
+  width: 7rem;
+  height: auto;
+}
+
+.hidden {
+  opacity: 0%;
+  transform: translateX(100%);
+}
+#menuknap {
+  font-size: 3rem;
+  color: #182c5e;
+}
+#menu {
+  list-style: none;
+  transition: transform 0.3s;
+}
+nav {
+  display: grid;
+  text-align: end;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  background-color: #182c5e;
+  text-align: center;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  margin-top: 2vw;
+}
+
+footer a {
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: white;
+}
+footer .mail a,
+.telefon a {
+  padding: 1vw;
+}
+footer a:hover {
+  text-decoration-line: underline;
+}
+
+#sociale_medier {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#sociale_medier img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* fonts */
+
+a {
+  font-family: sutro-shaded-primary, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #182c5e;
+}
+
+h1 {
+  font-family: sutro-shaded-primary, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: sutro, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  font-family: sutro, serif;
+  font-weight: 500;
+  font-style: italic;
+}
+p {
+  font-family: le-monde-livre-classic-byol, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#splash_web {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  /* Fjernelse af burgermenu */
+  #menuknap {
+    display: none;
+  }
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  /* header */
+  nav li {
+    display: inline-block;
+    padding-left: 2rem;
+  }
+
+  /* splash-billeder */
+  #splash_mobile {
+    display: none;
+  }
+  #splash_web {
+    display: ruby;
+    display: grid;
+    justify-content: center;
+  }
+  #splash_web img {
+    width: 90vw;
+  }
+
+  /* Footer */
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+}
