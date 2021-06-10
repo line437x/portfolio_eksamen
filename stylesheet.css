@@ -26,7 +26,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 2vw;
+  margin: 4vw;
 }
 
 .ikon img {
@@ -124,6 +124,22 @@ p {
   display: none;
 }
 
+/* Portlofio-side i mobil*/
+#portfolio #section_one {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 4vw;
+}
+
+#portfolio .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#portfolio img:hover {
+  background-color: #576da286;
+}
+
 @media (min-width: 600px) {
   /* Fjernelse af burgermenu */
   #menuknap {
@@ -137,6 +153,9 @@ p {
   nav li {
     display: inline-block;
     padding-left: 2rem;
+  }
+  header {
+    margin: 2vw;
   }
 
   /* splash-billeder */
@@ -157,5 +176,9 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+  }
+  /* Portlofio-side i desktop*/
+  #portfolio .section_wrapper {
+    display: flex;
   }
 }
