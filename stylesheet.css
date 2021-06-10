@@ -30,7 +30,7 @@ header {
 }
 
 .ikon img {
-  width: 7rem;
+  width: 8rem;
   height: auto;
 }
 
@@ -114,6 +114,13 @@ h3 {
   font-weight: 500;
   font-style: italic;
 }
+h4 {
+  font-family: sutro, serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration-line: underline;
+}
+
 p {
   font-family: le-monde-livre-classic-byol, serif;
   font-weight: 500;
@@ -125,12 +132,20 @@ p {
 }
 
 /* Portlofio-side i mobil*/
+#portfolio .baggrund_mobile {
+  position: absolute;
+  z-index: -10;
+  top: 25vw;
+}
+#portfolio .baggrund_desktop {
+  display: none;
+}
+
 #portfolio #section_one {
   display: grid;
   grid-template-columns: auto 1fr auto;
   padding: 4vw;
 }
-
 #portfolio .section_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -138,6 +153,46 @@ p {
 
 #portfolio img:hover {
   background-color: #576da286;
+}
+
+/* Web-side i mobil */
+#web {
+  background-color: #dfdfea;
+}
+#web #section_one,
+#web #section_two {
+  display: grid;
+  padding: 4vw;
+  color: #182c5e;
+}
+#web .splash_menu,
+#web .temabeskrivelse {
+  text-align: center;
+}
+#web .temabeskrivelse {
+  text-align: center;
+}
+#web .dokumentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+#web .dokumentation h2 {
+  grid-column: 1/3;
+  text-align: center;
+}
+#web #section_one p,
+#web #section_two p {
+  text-align: justify;
+}
+
+button {
+  width: 15rem;
+  height: 4rem;
+  background-color: white;
+  border: white;
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.329);
+  margin: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -180,5 +235,15 @@ p {
   /* Portlofio-side i desktop*/
   #portfolio .section_wrapper {
     display: flex;
+  }
+  #portfolio .baggrund_desktop {
+    display: ruby;
+    position: absolute;
+    z-index: -10;
+    top: 2vw;
+    width: 100vw;
+  }
+  #portfolio .baggrund_mobile {
+    display: none;
   }
 }
