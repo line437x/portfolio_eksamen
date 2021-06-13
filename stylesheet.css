@@ -144,19 +144,25 @@ p {
 }
 
 /* -------------Button------------- */
-
-button {
-  width: 15rem;
-  height: 4rem;
-  background-color: white;
-  color: #182c5e;
-  border: white;
-  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.329);
-  margin: 1rem;
-  font-size: 1rem;
+.knapper {
+  display: grid;
+  justify-content: center;
 }
 
-button:hover {
+.button {
+  width: 12rem;
+  height: 1rem;
+  margin: 1rem;
+  padding: 1.5rem;
+
+  background-color: white;
+  color: #182c5e;
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.329);
+
+  display: grid;
+  align-content: center;
+}
+.button:hover {
   background-color: #182c5e67;
   transition-duration: 0.5s;
 }
