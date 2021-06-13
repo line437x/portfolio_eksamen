@@ -4,6 +4,7 @@ img {
   height: auto;
   display: block;
 }
+/* -------------Grid på hele main */
 .index {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1200px) 1fr;
@@ -233,6 +234,7 @@ portfolio_one {
 .galleri {
   display: grid;
   grid-gap: 30px;
+  justify-content: center;
 }
 
 /* Tema-ikoner */
@@ -307,6 +309,7 @@ portfolio_one {
   .portfolio_wrapper {
     display: flex;
     margin-top: 4rem;
+    justify-content: center;
   }
 
   /* tema-sider i desktop */
