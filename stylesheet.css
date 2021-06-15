@@ -137,6 +137,9 @@ p {
   background-color: #182c5e67;
   transition-duration: 0.5s;
 }
+.button a:hover {
+  color: white;
+}
 
 /* -------------Forside i mobil------------- */
 
