@@ -313,6 +313,10 @@ h1,
 #om_mig_one figure {
   margin: 0;
 }
+#brødtekst {
+  display: grid;
+  justify-content: center;
+}
 
 @media (min-width: 860px) {
   /* Fjernelse af burgermenu */
@@ -454,6 +458,7 @@ h1,
   }
   figure,
   h1,
+  h2,
   #brødtekst {
     grid-column: 2/3;
   }
@@ -463,10 +468,8 @@ h1,
     grid-column: 1/3;
   }
   #brødtekst {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-    justify-content: center;
   }
 
   #om_mig_one figure img {
